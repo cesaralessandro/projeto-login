@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --verde: hsl(178, 37%, 46%);
+    --lilas: hsl(276, 49%, 34%);
+    
+}
+
+
+body, html {
+    background-color: var(--lilas);
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.692);
+    display: block;
+    width: 250px;
+    height: 500px;
+    overflow: hidden; /*tudo o que estiver fora da borda será escondido*/
+}
+
+section#login > div#imagem {
+    background-color: var(--lilas);
+    background-image: url(../imagens/landscape-space-200.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 200px;
+
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+}
