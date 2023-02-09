@@ -40,3 +40,27 @@
     }
  
 }
+
+@media screen and (min-width: 1200px) {
+    main > section#login {
+        width: 990px;
+    }
+
+
+    main > section#login > div#imagem {
+        float: left;
+        width: 50%;
+        height: 500px;
+    }
+
+    main > section#login > div#formulario {
+        float: right;
+        width: 50%;
+    }
+
+    main > section#login > div#formulario > h1, p {
+        margin-left: 30px;
+        
+    }
+
+}
