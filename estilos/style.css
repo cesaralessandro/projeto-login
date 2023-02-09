@@ -10,7 +10,9 @@
 :root {
     --verde: hsl(178, 37%, 46%);
     --lilas: hsl(276, 49%, 34%);
-    
+    --azul-gradiente: 	hsl(228, 36%, 13%);
+    --marrom-gradiente: hsl(23, 95%, 8%); 
+    --meio-azul-gradiente: 	hsl(223, 22%, 22%);
 }
 
 
@@ -20,10 +22,19 @@ body, html {
     width: 100vw;
 }
 
+body {
+    background-image: linear-gradient(to bottom, var(--azul-gradiente), var(--meio-azul-gradiente), var(--marrom-gradiente));
+}
+
 main {
     position: relative;
     height: 100vh;
     width: 100vw;
+}
+
+main > section#login > div#formulario > h1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 section#login {
@@ -32,17 +43,19 @@ section#login {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
-    border-radius: 5px;
+    border-radius: 15px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.692);
     display: block;
     width: 250px;
     height: 500px;
     overflow: hidden; /*tudo o que estiver fora da borda será escondido*/
+    transition: width .3s, height .3s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagem {
     background-color: var(--lilas);
-    background-image: url(../imagens/landscape-space-200.jpg);
+    background-image: url(../imagens/landscape-space.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
