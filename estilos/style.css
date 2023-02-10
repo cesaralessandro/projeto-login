@@ -9,6 +9,7 @@
 
 :root {
     --verde: hsl(178, 37%, 46%);
+    --verde-hover: hsl(177, 35%, 22%);
     --lilas: hsl(276, 49%, 34%);
     --azul-gradiente: 	hsl(228, 36%, 13%);
     --marrom-gradiente: hsl(23, 95%, 8%); 
@@ -66,19 +67,67 @@ section#login > div#imagem {
 }
 
 section#login > div#formulario {
+    margin: auto;
     display: block;
     padding: 10px;
 }
 
 section#login > div#formulario > p {
     font-size: 1em;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 
-a {
+div.campo > input {
+    height: 30px;
+    width: 100%;
+}
+
+
+input#iemail-login, input#isenha {
+    height: 25px;
+    width: 87%;
+    padding-left: 5px;
+    transform: translateY(-6.3px);
+}
+
+a#botao {
+    background-color: white;
+    border: 1px solid var(--verde-hover);
+    border-radius: 5px;
+    color: black;
+    padding: 3px;
+    width: 100%;
+    height: 30px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+a#botao:hover {
+    background-color: gray;
+    border: none;
+    color: white;
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
+form > input[type=submit] {
+    background-color: var(--verde);
+    border-radius: 5px;
+    border: none;
+    color: black;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    width: 100%;
+    height: 30px;
+}
+
+form > input[type=submit]:hover {
+    color: white;
+    cursor: pointer;
+    background-color: var(--verde-hover);
+    width: 100%;
+    height: 30px;
 }
